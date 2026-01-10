@@ -83,6 +83,7 @@ if(!$hasErr)
     $email=$_POST['email'];
     $subject=$_POST['subject'];
     $message=$_POST['message'];
+    echo "Email is Sent!"."<br>";
     echo "Name: ".$name."<br>";
     echo "Email: ".$email."<br>";
     echo "Subject: ".$subject."<br>";
