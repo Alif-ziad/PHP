@@ -1,17 +1,17 @@
-# PHP Practice and Database Exercises
+# PHP Practice & Database Exercises
 
-Collection of PHP coursework and small database-backed exercises.
+Small PHP coursework exercises covering form handling, validation, file uploads, basic calculations, and MySQL access.
 
 ## Included work
 
-- Student registration form
-- PHP calculator
-- Contact form and upload practice
-- Registration exercises
-- Bookstore database exercise
-- Student-record database exercise
+- **Student Registration Form** — field validation for name, email, username, password, age, gender and course.
+- **PHP Calculator** — simple arithmetic using submitted form values.
+- **Contact Form** — validation plus JPEG/PNG/PDF upload practice with a 2 MB limit.
+- **Registration Exercise** — username/email/password validation practice.
+- **Bookstore Exercise** — local MySQL connection and partial add-book/ISBN checking work.
+- **Student Records** — local MySQL connection and tabular student-record display.
 
-## Repository structure
+## Structure
 
 ```text
 Database/
@@ -27,22 +27,19 @@ php/
 
 ## Run locally
 
-1. Install PHP, or use XAMPP/WAMP/LAMP.
-2. Place the repository inside the local web-server document root when using XAMPP/WAMP.
-3. Start the web server.
-4. For database exercises, start MySQL and check the corresponding database-connection file before running the page.
-5. Open the relevant `.php` file through `localhost` rather than by double-clicking it.
+Use PHP directly or a local stack such as XAMPP/WAMP/LAMP. For database exercises, start MySQL and create the database/schema expected by the relevant connection file before opening the page through `localhost`.
+
+## Notes
+
+- The database examples use local development credentials (`root` with no password) and are **not production configuration**.
+- The bookstore folder is incomplete: `catalog.php`, `details.php` and `search.php` are empty placeholders, and the add-book routine is unfinished.
+- `php-contact-form/uploads/` contains historical sample uploads; new runtime uploads are ignored by `.gitignore`.
+- These exercises are learning/coursework examples rather than production applications.
 
 ## Tech
 
-- PHP
-- MySQL
-- HTML/CSS
+PHP · MySQL · HTML · basic CSS/form validation
 
-## Purpose
+## Maintainer
 
-This repository is a learning/workshop collection. Production applications and research work are documented separately on my GitHub profile.
-
-## Author
-
-MD Alif Ziad Sarkar — CSE, American International University-Bangladesh (AIUB)
+**MD Alif Ziad Sarkar**
